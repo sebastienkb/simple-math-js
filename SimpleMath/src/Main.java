@@ -7,6 +7,7 @@ public class Main {
             System.out.println("Le résultat de la division est : " + resultat);
         }
 
+        //region DIVISEUR
         public static double diviser(double dividende, double diviseur) {
             if (diviseur == 0) {
                 throw new ArithmeticException("Division par zéro !");
@@ -14,4 +15,5 @@ public class Main {
 
             return dividende / diviseur;
         }
+        //endregion
     }
