@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        System.out.println("Bienvenue sur cette calculatrice!");
 
         // MULTIPLICATION
         int nombre1 = demanderNombre("Entrez le premier nombre : ");
@@ -21,5 +21,10 @@ public class Main {
 
     public static int multiplier(int nombre1, int nombre2) {
         return nombre1 * nombre2;
+        
+    }
+
+    public static int addition (int a, int b){
+        return (a + b);
     }
 }
