@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
         System.out.println("Bienvenue sur cette calculatrice!");
 
@@ -23,8 +24,13 @@ public class Main {
         return nombre1 * nombre2;
         
     }
-
     public static int addition (int a, int b){
         return (a + b);
     }
+  
+    public static int soustraction (int a, int b) {
+
+        return a - b;
+    }
+
 }
