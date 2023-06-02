@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        System.out.println("Bienvenue sur cette calculatrice!");
         powerFunction();
     }
 
@@ -20,5 +20,9 @@ public class Main {
 
     public static boolean isIntegerString(String input) {
         return input.matches("-?\\d+");
+    }
+
+    public static int addition (int a, int b){
+        return (a + b);
     }
 }
