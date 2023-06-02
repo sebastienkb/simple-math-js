@@ -3,6 +3,12 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        double a = 10.0;
+        double b = 3.0;
+
+        double resultatDiv = diviser(a, b);
+        System.out.println("Le résultat de la division est : " + resultatDiv);
+
         System.out.println("Bienvenue sur cette calculatrice!");
       
         powerFunction();
@@ -15,6 +21,16 @@ public class Main {
 
         System.out.println("Le résultat de la multiplication est : " + resultat);
     }
+
+    //region DIVISEUR
+    public static double diviser(double dividende, double diviseur) {
+        if (diviseur == 0) {
+            throw new ArithmeticException("Division par zéro !");
+        }
+
+        return dividende / diviseur;
+    }
+    //endregion
 
     public static void powerFunction() {
         Scanner scan = new Scanner(System.in);
@@ -53,5 +69,4 @@ public class Main {
 
         return a - b;
     }
-
 }
